@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Classifier Result</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h2 style="text-align: left">Classifier Result:</h2>
+    <table>
+        <tr>
+            <td>Text</td>
+            <td>{{ new_content }}</td>
+        </tr>
+        <tr>
+            <td>Probabilities:</td>
+            <td>
+                <table>
+                    <tr>
+                        <td> 0 </td>
+                        <td> 1 </td>
+                        <td> 2 </td>
+                        <td> 3 </td>
+                        <td> 4 </td>
+                        <td> 5 </td>
+                        <td> 6 </td>
+                        <td> 7 </td>
+                        <td> 8 </td>
+                        <td> 9 </td>
+                        <td> 10 </td>
+                        <td> 11 </td>
+                        <td> 12 </td>
+                        <td> 13 </td>
+                    </tr>
+                    <tr>
+                        <td> {{ proba_0 }} </td>
+                        <td> {{ proba_1 }} </td>
+                        <td> {{ proba_2 }} </td>
+                        <td> {{ proba_3 }} </td>
+                        <td> {{ proba_4 }} </td>
+                        <td> {{ proba_5 }} </td>
+                        <td> {{ proba_6 }} </td>
+                        <td> {{ proba_7 }} </td>
+                        <td> {{ proba_8 }} </td>
+                        <td> {{ proba_9 }} </td>
+                        <td> {{ proba_10 }} </td>
+                        <td> {{ proba_11 }} </td>
+                        <td> {{ proba_12 }} </td>
+                        <td> {{ proba_13 }} </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>Predicted Label</td>
+            <td><b>Label {{ predicted_category }}</b></td>
+        </tr>
+    </table>
+</div>
+{% endblock %}

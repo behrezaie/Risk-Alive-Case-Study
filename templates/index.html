@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Risk Alive Case Study</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h2 style="text-align: left">DBpedia Text Classifier API</h2>
+    <form action="/" method="POST">
+        <input type="text" name="content" id="content">
+        <input type="submit" value="Classify">
+    </form>
+</div>
+{% endblock %}
